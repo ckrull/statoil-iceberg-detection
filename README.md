@@ -51,6 +51,4 @@ The following libraries were used during the completion of this project:
 - `train.json.7z`
 - `test.json.7z`
 
-The Dataset can also be downloaded from Kaggle:
-
-https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data"# statoil-iceberg-detection" 
+The Dataset can also be downloaded from [Kaggle](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data).

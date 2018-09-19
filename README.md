@@ -1,15 +1,25 @@
-### README
+# README
 
 ## Iceberg detection - Capstone Project 
-
 ### Cornelius Krull - Udacity machine learning nanodegree - July 2018
 
-following files are included in this submission:
+Drifting icebergs pose a threat to navigation and shipping activities in remote areas e.g. the east coast of Canada. In many areas satellite based monitoring Synthetic-aperture radar (SAR) images are the only viable option to detect them. However other objects such as ships can have similar SAR signatures. This project uses deep learning (Convolutional Neural Networks), random forests, k-nearest-neighbours and ensemble methods to discriminate between ships and iceberg in SAR images. Achievingan accuracy of over 90%. The project is based on the [Statoil/C-CORE Iceberg Classifier Challenge on Kaggle](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge).
+
+**Highlights:**
+
+- Image classification 
+- CNNs, random forests, k-NN and ensemble methods
+- k-fold cross validation for deep learning
+
+I did this project as part of my Machine Learning Nanodegree from Udacity.
+
+following files are included:
 
 ## Report
 - [`capstone_report_krull.pdf`](capstone_report_krull.pdf) The capstone report 
 - [`proposal.pdf`](proposal.pdf) The capstone proposal
 ## Jupyter Notebooks
+links go to [nbviewer](http://nbviewer.jupyter.org/)
 - [`1_Data_Exploration.ipynb`](http://nbviewer.jupyter.org/github/ckrull/statoil-iceberg-detection/blob/master/1_Data_Exploration.ipynb)- The initial exploration of the data
 - [`2_Training_simple_CNN-k-fold-CV.ipynb`](http://nbviewer.jupyter.org/github/ckrull/statoil-iceberg-detection/blob/master/2_Training_simple_CNN-k-fold-CV.ipynb)-  k-fold cross validation grid search to find the best CNN from scratch 
 - [`3_Keras_transfer_learning.ipynb`](http://nbviewer.jupyter.org/github/ckrull/statoil-iceberg-detection/blob/master/3_Keras_transfer_learning.ipynb)- Transfer learning of ImageNet based models
@@ -22,6 +32,7 @@ following files are included in this submission:
 - [`kfold_keras.py`]( kfold_keras.py) various small helper functions used throughout the project
 - [`statoil_models.py`](statoil_models.py) The convolutional neural networks used in this project
 - [`guidedfilter.py`](guidedfilter.py) A python implementation of the guided filter
+
 ## Bottleneck features
 
 - `Xception_bottle.h5` Bottleneck features for Xception
@@ -33,17 +44,11 @@ following files are included in this submission:
 The following libraries were used during the completion of this project:
 
 - `Keras`- Deep learning framework
-
 - `Pandas`- Timeseries and Dataframe library
-
 - `Numpy`- essential library
-
 - `Scipy`- Scientific computing package for python
-
 - `Scikit-learn`- Machine learning library
-
 - `Scikit-image`- Image processing in python
-
 - `tqdm`- progressbars ( can be downloaded from here https://github.com/tqdm/tqdm)
 
 The Dataset can  be downloaded from [Kaggle](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge/data).
